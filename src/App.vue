@@ -1,19 +1,17 @@
 <template>
   <div id="app">
     <page-header></page-header>
-    <home-page></home-page>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import homePage from "./view/index.vue";
-import pageHeader from "./view/system/pageHeader.vue";
+import pageHeader from "./components/pageHeader.vue";
 
 export default {
   name: "App",
   components: {
-    pageHeader,
-    homePage
+    pageHeader
   }
 };
 </script>

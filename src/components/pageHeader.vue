@@ -1,8 +1,8 @@
 <template>
   <div class="page-header">
     <div class="left">
-      <router-link to="/homePage">首页 </router-link>
-      <router-link to="/mytest">测试页面1</router-link>
+      <router-link to="/homePage"> Hsingleb </router-link>
+      <router-link to="/mytest"> Test一下~ </router-link>
     </div>
   </div>
 </template>
