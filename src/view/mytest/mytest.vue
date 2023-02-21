@@ -1,10 +1,14 @@
 <template>
-  <div class="my-test">来到另外一个标签了</div>
+  <div class="my-test">
+    <test-form></test-form>
+  </div>
 </template>
 
 <script>
+import testForm from "./testForm.vue";
 export default {
-  name: "myTest"
+  name: "myTest",
+  components: { testForm }
 };
 </script>
 
