@@ -1,3 +1,11 @@
+<!--
+ * @Author: huangbiao huangb@faithindata.com.cn
+ * @Date: 2023-02-22 09:39:45
+ * @LastEditors: huangbiao huangb@faithindata.com.cn
+ * @LastEditTime: 2023-03-27 11:44:04
+ * @FilePath: \test_vue_cli2\src\view\mytest\testForm.vue
+ * @Description: 
+-->
 <template>
   <div>
     <a-form-model ref="ruleForm" :model="form" :rules="rules">
