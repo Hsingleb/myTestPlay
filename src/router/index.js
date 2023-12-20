@@ -37,7 +37,14 @@ export default new VueRouter({
         {
           path: "testPageOne",
           // parent: "myTest",
-          component: () => import('../view/mytest/testPage/testPageOne.vue')
+          component: () => import("../view/mytest/testPage/testPageOne.vue")
+          // component: "../view/mytest/testPage/testPageOne.vue"
+          // component: testPage
+        },
+        {
+          path: "webGLtest",
+          // parent: "myTest",
+          component: () => import("../view/mytest/testPage/webGLtest.vue")
           // component: "../view/mytest/testPage/testPageOne.vue"
           // component: testPage
         }

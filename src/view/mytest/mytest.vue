@@ -180,9 +180,15 @@ export default {
     <div v-if="titleView">
       <!-- <a @click="testTitleView" v-if="titleView">动态表格表单校验</a> -->
       <!-- <router-link to="/myTest/testPageOne">动态表格表单校验</router-link> -->
-      <router-link to="/myTest/testPageOne" @click="testTitleView"
-        >动态表格表单校验</router-link
-      >
+
+      <li>
+        <router-link to="/myTest/testPageOne" @click="testTitleView"
+          >动态表格表单校验</router-link
+        >
+      </li>
+      <li>
+        <a to="/myTest/webGLtest" @click="testTitleView">webGL1220</a>
+      </li>
     </div>
     <router-view></router-view>
   </div>
@@ -192,10 +198,15 @@ export default {
 export default {
   name: "myTest",
   data() {
-    return { titleView: true };
+    return { titleView: false };
+  },
+  mounted(){
+    this.titleView = true;
   },
   methods: {
     testTitleView() {
+      console.log("消失");
+      this.$router.push("/myTest/webGLtest");
       // this.$router.push("/myTest/testPageOne");
       // this.$router.go("/myTest/testPageOne");
       this.titleView = false;
